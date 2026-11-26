@@ -1,0 +1,99 @@
+{
+ "id": "prueba1",
+ "slug": "prueba_sistema",
+ "texto": "¿Te acuerdas del primer tráiler de GTA 6? Salió en diciembre de 2023 y rompió el récord de YouTube en un solo día. Ahí conocimos a Lucía, la primera protagonista mujer en años. Y Vice City se veía más viva que nunca. Esto es solo una prueba del sistema nuevo de Zona GTA.",
+ "hook": [
+  [
+   "¿TE ACUERDAS",
+   "white"
+  ],
+  [
+   "DE ESTE TRÁILER?",
+   "yellow"
+  ]
+ ],
+ "fuentes": {
+  "trailer1.mp4": "https://storage.googleapis.com/vidiq-user-videos/f6b88ee4-9958-45c8-a6f9-c20f76d890cb/a88a3fd2-7113-4691-9658-639fb6e9d745.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1796267227&Signature=JrD20CWZneruD5tNJnKxChAUiSPKRLXZ2S7DP8pTmvy1xZgWSYqtH2UjdCk4zEDkKt9mH8OP4p95FSr3akDEVVuH9cVYXtLm%2Bp2gy5ol1gDFceQpyEBy7iTFAv6rNtAQ2PxuuU59uAoNbYRvL5KfJvAB5Yt86s5rsWMZ6%2FF75Cr6J91MCZvD298bznghfyfIFa%2FFJ0UXFmpN3VSh5ctlIOVdO2GqQh0uOOU0rbTtWcgNxVbvuFLBpyNoFsxKoXYf2KFb3Uf3upbE9Lcf6zbXH1F7jIzHIw%2FAm5LN6z6rCs%2FqHK7E5VI2hkWquzTpBrPjOPb9YCqHVtiCIKJloO8e4g%3D%3D"
+ },
+ "clips": {
+  "a": [
+   "trailer1.mp4",
+   4,
+   0.5,
+   1.0
+  ],
+  "b": [
+   "trailer1.mp4",
+   18,
+   0.5,
+   1.0
+  ],
+  "c": [
+   "trailer1.mp4",
+   33,
+   0.5,
+   1.0
+  ],
+  "d": [
+   "trailer1.mp4",
+   47,
+   0.5,
+   1.0
+  ],
+  "e": [
+   "trailer1.mp4",
+   62,
+   0.5,
+   1.0
+  ],
+  "f": [
+   "trailer1.mp4",
+   76,
+   0.5,
+   1.0
+  ]
+ },
+ "montage": [
+  "clip:a@0",
+  "clip:a@1.5",
+  "clip:b@0"
+ ],
+ "shots": [
+  [
+   "Salió en",
+   "clip:b@0",
+   "push"
+  ],
+  [
+   "rompió el",
+   "clip:c@0",
+   "punch"
+  ],
+  [
+   "Ahí conocimos",
+   "clip:d@0",
+   "push"
+  ],
+  [
+   "Y Vice City",
+   "clip:e@0",
+   "push"
+  ],
+  [
+   "Esto es solo",
+   "clip:f@0",
+   "hold"
+  ]
+ ],
+ "kw": [
+  [
+   "rompió el récord",
+   "RÉCORD EN YOUTUBE",
+   "yellow"
+  ]
+ ],
+ "hits": [
+  "record"
+ ],
+ "audio_juego": []
+}

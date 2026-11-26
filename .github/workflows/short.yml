@@ -1,0 +1,43 @@
+name: short
+on:
+  push:
+    paths: ['jobs/actual.txt']
+permissions:
+  contents: write
+concurrency: {group: short, cancel-in-progress: false}
+jobs:
+  short:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12', cache: pip}
+      - name: Herramientas
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q -U "yt-dlp[default]" playwright numpy scipy soundfile sherpa-onnx requests
+      - name: Modelo de voz a texto (cache)
+        id: asr
+        uses: actions/cache@v4
+        with: {path: asr, key: parakeet-v3-int8}
+      - name: Bajar modelo
+        if: steps.asr.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p asr && cd asr
+          curl -sSL https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8.tar.bz2 | tar xj
+      - name: Hacer el Short
+        env:
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+        run: |
+          ID=$(tr -d '[:space:]' < jobs/actual.txt)
+          echo "ID=$ID" >> $GITHUB_ENV
+          export ASR_DIR=$GITHUB_WORKSPACE/asr/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3-int8
+          python motor/hacer.py "$ID" 2>&1 | tee out_log.txt
+      - name: Publicar resultado
+        if: always()
+        env: {GH_TOKEN: '${{ github.token }}'}
+        run: |
+          mkdir -p out; cp out_log.txt out/log.txt 2>/dev/null || true
+          gh release delete "short-$ID" -y --cleanup-tag 2>/dev/null || true
+          gh release create "short-$ID" out/* --title "short-$ID" --notes "Short $ID"
