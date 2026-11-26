@@ -6,7 +6,7 @@
  },
  "cancion_url": "https://storage.googleapis.com/vidiq-user-videos/f6b88ee4-9958-45c8-a6f9-c20f76d890cb/f2885d33-f3dc-479c-84ef-cb7e0668e3db.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1796325248&Signature=DewWo5qyxSnEFexn%2FRIAJXGKKwGYfFnqGapP6m4eZ22LIJEmM6a0ALtov5pTH29g6pQ8KMhl7lJpcK5IBJthEnYRAejy%2BJVaJwqGWQdSH5NgKMHuJplwJyplwm4bIDx2mC1dJXAgMmZCKHgPiatxMV2ApcJfLo2mh5NHgvfwxjA6aVm6AmKPdZm7XNHMSCbjSceR9bgCx0NT6dvIvjIWYjc4yvyQE2acI5TwQX4bKpGx66Oe5aNJTQhoPNKh303gAa9Z0vXbmqKY9ZMbx6vCU8sXEICTTIz6MIGKpVg%2B29qTzAj7ZQK4U%2F%2F%2BVy1Kau0zwWqPZdDlC6ULJFQpAsFHmA%3D%3D",
  "song_start": 14.0,
- "texto": "GTA 6 esconde un payaso asesino en un elevador, y casi nadie lo ha visto. Ve al hotel Haymarket, en Ocean Beach, ya de noche. Adentro hay un elevador fuera de servicio con un globo rojo. Súbete al de al lado, el que está lleno de globos. Cuando empieza a subir, las luces parpadean, se apaga todo, y cuando regresan, el payaso está enfrente de ti con un machete. Puro homenaje a It. ¿Tú ya lo encontraste?",
+ "texto": "GTA 6 esconde un payaso asesino en un elevador, y casi nadie lo ha visto. Ve al hotel Haymarket, en Ocean Beach, ya de noche. Adentro hay un elevador fuera de servicio con un globo rojo. Súbete al de al lado, el que está lleno de globos. Cuando empieza a subir, la luz parpadea, se apaga todo, y cuando regresan, el payaso está enfrente de ti con un machete. Puro homenaje a It. ¿Tú ya lo encontraste?",
  "hook": [
   [
    "GTA 6 ESCONDE",
@@ -99,7 +99,7 @@
    "push"
   ],
   [
-   "las luces",
+   "la luz",
    "clip:apagon@2",
    "hold"
   ],
@@ -115,7 +115,7 @@
   ],
   [
    "¿Tú ya",
-   "clip:nada@0",
+   "clip:nada@1",
    "hold"
   ]
  ],
