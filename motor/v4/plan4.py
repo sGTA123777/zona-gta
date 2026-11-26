@@ -53,7 +53,7 @@ def plan(vid):
     seg = [0.0] + [hook_end * (0.32 + 0.30 * k) for k in range(n - 1)] + [hook_end]   # cortes rápidos en el gancho
     for k, img in enumerate(mont):
         shots.append(dict(t0=seg[k], t1=seg[k + 1], img=img, move="punch" if k == 0 else ("push" if k % 2 else "right"), tr="cut" if k == 0 else "flash"))
-    import random; rnd = random.Random(int(vid) * 7 + 1)
+    import random; rnd = random.Random((int(vid) if str(vid).isdigit() else __import__("zlib").crc32(str(vid).encode()) % 1000) * 7 + 1)
     for j, (t0, img, mv, lay) in enumerate(anchors):
         t1 = anchors[j + 1][0] if j + 1 < len(anchors) else dur
         tr = "cut" if (mv == "punch" or lay) else rnd.choice(TRS)
@@ -97,7 +97,7 @@ def plan(vid):
         if norm(w["w"]) in v["hits"] and (not hits or w["t"] - hits[-1] > 0.7): hits.append(round(w["t"], 3))
     caps = captions(words, kwidx)
     # efectos de sonido
-    rnd = random.Random(int(vid) * 13 + 5)
+    rnd = random.Random((int(vid) if str(vid).isdigit() else __import__("zlib").crc32(str(vid).encode()) % 1000) * 13 + 5)
     sfx = [{"k": "boom", "t": 0.0, "v": rnd.randrange(3)}, {"k": "riser", "t": max(0, hook_end - 0.9), "v": rnd.randrange(3)}]
     mgaps = []
     LAYS = {"anim": "pop", "split": "swish", "card": "swoosh_up", "shot": "swoosh_up", "focus": "zoom_in", "slam": "bass_drop", "count": "counter", "news": "typing", "cine": "boom_soft", "mono": "scratch"}
@@ -127,7 +127,7 @@ def plan(vid):
         strong = [k["t"] for k in kws if not k.get("list") and k.get("c") in ("yellow", "cyan", "green")]
         sfx = []
     tl = dict(id=vid, slug=v["slug"], tone=v.get("tone", "#22E3D6"), duration=dur, hook=v["hook"], hookEnd=round(hook_end + 0.25, 3),
-              shots=shots, kw=kws, hits=hits, caps=caps, sfx=sfx, mgaps=mgaps, banner=v.get('banner'), parallax=not v.get('v5'), style=v.get('music', ['phonk','trap','synth'][int(vid) % 3]), song=v.get('song'), song_start=v.get('song_start', 0.0), v6=bool(v.get('v6')), v7=bool(v.get('v7')))
+              shots=shots, kw=kws, hits=hits, caps=caps, sfx=sfx, mgaps=mgaps, banner=v.get('banner'), parallax=not v.get('v5'), style=v.get('music', ['phonk','trap','synth'][(int(vid) if str(vid).isdigit() else __import__("zlib").crc32(str(vid).encode()) % 1000) % 3]), song=v.get('song'), song_start=v.get('song_start', 0.0), v6=bool(v.get('v6')), v7=bool(v.get('v7')))
     json.dump(tl, open(f"{d}/timeline.json", "w"), ensure_ascii=False, indent=1)
     print(f"{vid}: {dur:.1f}s  tomas={len(shots)} (cada {dur/len(shots):.1f}s)  claves={len(kws)}  golpes={len(hits)}  subtítulos={len(caps)}")
 

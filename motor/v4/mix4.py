@@ -338,7 +338,7 @@ def build(vid):
     if tl.get("song"):
         mus = load_song(tl["song"], tl.get("song_start", 0.0), n)
     else:
-        mus = beat_style(dur, int(vid), tl.get("style", "phonk"))
+        mus = beat_style(dur, (int(vid) if str(vid).isdigit() else __import__("zlib").crc32(str(vid).encode()) % 1000), tl.get("style", "phonk"))
     he0 = int(tl["hookEnd"] * SR)
     if not tl.get("song"): mus[:he0] = np.stack([lp(mus[:he0, 0], 500), lp(mus[:he0, 1], 500)], 1) * 1.6     # intro filtrado, luego cae el beat
     for a, b2 in tl.get("mgaps", []):                                                     # silencio antes de un golpe
@@ -353,11 +353,11 @@ def build(vid):
         mus = mus * (duck * pre)[:, None] * 0.30
     else:
         mus = mus * (duck * pre)[:, None] * 0.30
-    fx = np.zeros((n, 2)); rng = np.random.default_rng(int(vid))
+    fx = np.zeros((n, 2)); rng = np.random.default_rng((int(vid) if str(vid).isdigit() else __import__("zlib").crc32(str(vid).encode()) % 1000))
     for ev in tl["sfx"]:
         k = ev["k"]; x = make_sfx(k, rng, ev.get("v", 0))
         add(fx, x, ev["t"], G.get(k, 0.2) * (0.85 + 0.3 * rng.random()), pan=(rng.random() - 0.5) * 0.5 if x.ndim == 1 else 0)
-    am = np.zeros(n) if tl.get("v7") else amb_track(tl, n, np.random.default_rng(int(vid) + 7)) * (10 ** (-31 / 20))     # ambiente de la escena, ~13 dB bajo la voz
+    am = np.zeros(n) if tl.get("v7") else amb_track(tl, n, np.random.default_rng((int(vid) if str(vid).isdigit() else __import__("zlib").crc32(str(vid).encode()) % 1000) + 7)) * (10 ** (-31 / 20))     # ambiente de la escena, ~13 dB bajo la voz
     # pequeña sala en la voz para que no suene 'en el vacío'
     ir = np.random.default_rng(3).standard_normal(int(0.25 * SR)) * np.exp(-np.arange(int(0.25 * SR)) / (0.05 * SR)); ir = lp(ir, 5000)
     room = signal.fftconvolve(v, ir)[:n]; room = room / (np.sqrt(np.mean(room ** 2)) + 1e-9) * np.sqrt(np.mean(v ** 2)) * 0.12
