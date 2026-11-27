@@ -22,6 +22,7 @@ import os as _os
 import json as _json, glob as _glob
 for _f in _glob.glob(_os.path.join(_os.path.dirname(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))), "jobs", "*", "job.json")):
     _j = _json.load(open(_f, encoding="utf-8"))
+    if "texto" not in _j or "shots" not in _j: continue   # trabajos solo para "ver" (sin guion todavía)
     V[_j["id"]] = dict(slug=_j["slug"], tone=_j.get("tone", "#FFD21F"), v5=True, v6=True, v7=True, banner=None,
         hook=[tuple(x) for x in _j.get("hook", [])], song=_j.get("song"), song_start=_j.get("song_start", 0.0), text=_j["texto"],
         montage=_j["montage"], shots=[tuple(x) for x in _j["shots"]], kw=[tuple(x) for x in _j.get("kw", [])], hits=_j.get("hits", []))
