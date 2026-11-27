@@ -2,8 +2,8 @@
  "id": "27",
  "slug": "portal_vice_city",
  "fuentes": {
-  "portal1.mp4": "https://storage.googleapis.com/vidiq-user-videos/f6b88ee4-9958-45c8-a6f9-c20f76d890cb/7e086cf5-10dc-4eaf-92e9-8e7f7d524fac.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1796343405&Signature=KgTKM8rZn3xETLSVCCG7ESa9IJdkENrP9DXKts%2B8WtIVDpHMgUbArDei4HkiucPsbMjBqa4V0fltCQh6pegQsxsolpRFPGtgGsC8K3TXlAdA4c%2BBS7CtmOPSapepTIWfk12lHBYO19Iw%2B9C5Z0wEGeM1r9XT1mQtxsrj8G3hVMvNht0%2BwTkjeEKbx6ckYqiwOC5WuiFcC6uS3Q5j3A19HEzBUUzqyZTprQTjGXAlryz0PK7XaWjf4Mg%2BwqqGNZiVQT3rUBf3JgQS8aNxCDPZB0iZwowjAP7RBVgJX1PI%2FxRNU48591tITIjGrHCVZghAO6sS5qQwhCM6Z6NU3mhsSA%3D%3D",
-  "portal2.mp4": "https://storage.googleapis.com/vidiq-user-videos/f6b88ee4-9958-45c8-a6f9-c20f76d890cb/a30ecd69-e094-4014-b8dc-d4e91b72352a.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1796343406&Signature=Va4%2B%2F9yktEawLH1V901YygnFN3fK4x5HsfSJD6OlHTTvV1Z2ZsZmZsUHWoJINgLtg6zF2Uh1HGnQG2vXCeAa2UgzNiFJEVY6TAPtfeBhSg4Cu2foXB0O6Hm4VfM4Ota9LWa9XlDGoGkkws7kTdIercQjvBoVlNGq0gNxBtBb8sdnF8r7uiRSjTNe7mf8gyTcBO6fj00ubxTws9qmyT%2BfZcUEYBlbUGukKbrMXN4yeIkXVqnXyOFqDXNtWZY2XgvupqoOy85bRSVc8YYdQqSmw45m1K%2Frh%2Bi%2FoR2etnNqVI%2FPdxZ4CPB9pbHS0V6BMdUWcHNSeq9vyMrPG7j7Y2Sapw%3D%3D"
+  "portal1.mp4": "https://www.youtube.com/watch?v=nh_Kp44JuJY",
+  "portal2.mp4": "https://www.youtube.com/watch?v=ZgZ0ymulXIc"
  },
  "cancion_url": "https://storage.googleapis.com/vidiq-user-videos/f6b88ee4-9958-45c8-a6f9-c20f76d890cb/18708d5f-5669-4a92-b730-0a8f47ab405b.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1796343384&Signature=o0vzUXaSijc1TZmr5rPlhPm6%2FZnt1U43M7abI75UqWA6e%2F9rl03D%2FoFa43bdlvS9ahLrOHSkLlBtzCRaHbuc1b2aWr7C6ulQtNOp%2FSDqmLxDMz7HW0cZrWPHs92D9%2BVnIGhqtuXA6f%2FTkWN9BAzhoP1QIkEXoC8eyzt9wW6EAtxdrIF5zN8AIEbMSjqtm2JJs3HkRPNq8hn1XQ5PE6eomIZc3KCbQH65dERV1pygm0O6E2Mr5f6b74NfkjL1ppMvODvf6cqhBMTFb2gPGVioxehnjm4cwpE85oRoq8wJxcg9sj7zXOwBG1OQD1isLWas0qsKEz4TuQN4eSlDBT1FqA%3D%3D",
  "song_start": 1.0,
@@ -21,7 +21,7 @@
  "clips": {
   "torre": [
    "portal2.mp4",
-   42.0,
+   52.0,
    0.5,
    1.0
   ],
