@@ -15,7 +15,11 @@ for nombre, url in job["fuentes"].items():
         sh(f'curl -sSfL -o "{dst}" "{url}"')
     else:
         sh(f'yt-dlp -q -f "bv*[height<=2160]+ba/b" --merge-output-format mp4 -o "{dst}" "{url}"')
-    sh(f'ffprobe -v error -show_entries stream=width,height -of csv=p=0 "{dst}"')
+    wh = subprocess.run(f'ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 "{dst}"', shell=True, capture_output=True, text=True).stdout.strip()
+    print("resolucion", nombre, wh, flush=True)
+    w, h = (int(x) for x in wh.split(",")[:2])
+    if min(w, h) < 1080 and not job.get("permitir_baja_calidad"):
+        raise SystemExit(f"CALIDAD BAJA: {nombre} es {w}x{h}. Usa una fuente de 1080p o más (busca otro video).")
 
 # 2) Canción (opcional): link de vidIQ de un video de YouTube -> mp3
 if job.get("cancion_url"):
