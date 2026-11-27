@@ -9,6 +9,6 @@ for nombre, url in job["fuentes"].items():
     else: subprocess.run(["yt-dlp", "-q", "-f", "bv*+ba/b", "--merge-output-format", "mp4", "-o", dst, url], check=True)
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", dst], capture_output=True, text=True).stdout.strip() or 0)
     base = nombre.rsplit(".", 1)[0]; paso = 1 if dur <= 120 else 2
-    vf = f"fps=1/{paso},scale=320:-2,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='%{{eif\\:t*{paso}\\:d}}s':x=6:y=6:fontsize=26:fontcolor=yellow:box=1:boxcolor=black@0.6"
+    vf = f"fps=1/{paso},scale=320:-2,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='%{{eif\\:t\\:d}}s':x=6:y=6:fontsize=26:fontcolor=yellow:box=1:boxcolor=black@0.6"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", dst, "-vf", vf + ",tile=6x5", f"{out}/hoja_{base}_%02d.jpg"], check=True)
     print(nombre, round(dur, 1), "s")
