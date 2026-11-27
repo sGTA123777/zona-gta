@@ -2,13 +2,11 @@
  "id": "27",
  "slug": "portal_vice_city",
  "fuentes": {
-  "memeio.mp4": "https://x.com/MemeioYT/status/2124861344696648173",
-  "pirat.mp4": "https://x.com/Pirat_Nation/status/2125016553926332867",
-  "mario.mp4": "https://x.com/RoundtableSpace/status/2125126017761312872"
+  "memeio.mp4": "https://x.com/MemeioYT/status/2124861344696648173"
  },
  "cancion_url": "https://storage.googleapis.com/vidiq-user-videos/f6b88ee4-9958-45c8-a6f9-c20f76d890cb/18708d5f-5669-4a92-b730-0a8f47ab405b.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1796343384&Signature=o0vzUXaSijc1TZmr5rPlhPm6%2FZnt1U43M7abI75UqWA6e%2F9rl03D%2FoFa43bdlvS9ahLrOHSkLlBtzCRaHbuc1b2aWr7C6ulQtNOp%2FSDqmLxDMz7HW0cZrWPHs92D9%2BVnIGhqtuXA6f%2FTkWN9BAzhoP1QIkEXoC8eyzt9wW6EAtxdrIF5zN8AIEbMSjqtm2JJs3HkRPNq8hn1XQ5PE6eomIZc3KCbQH65dERV1pygm0O6E2Mr5f6b74NfkjL1ppMvODvf6cqhBMTFb2gPGVioxehnjm4cwpE85oRoq8wJxcg9sj7zXOwBG1OQD1isLWas0qsKEz4TuQN4eSlDBT1FqA%3D%3D",
  "song_start": 1.0,
- "texto": "GTA 6 esconde un portal que te regresa al Vice City de 2002. Sube a la torre de radio de Key Lento y haz que salga el logo del Malibu en la tele. Luego visita doce subestaciones sin viaje rápido: sus letreros juntos dicen Life is passing me by, el truco del Vice City original. Ya de noche, en el reactor de Turtle Head, se abre el portal, y apareces en el Club Malibu con gráficos de PS2. Sales con la camisa de Tommy Vercetti y su moto. ¿Tú ya entraste?",
+ "texto": "GTA 6 esconde un portal que te regresa al Vice City de 2002. Se abre de noche en el reactor de Turtle Head, pero antes tienes que activar doce subestaciones, y sus letras dicen Life is passing me by, el truco del Vice City original. Lo cruzas y apareces en el Club Malibu, con gráficos de PS2. Hasta te encuentras a Kent Paul. Y al salir, te llevas la camisa de Tommy Vercetti y su moto. ¿Tú ya entraste?",
  "hook": [
   [
    "GTA 6 TE REGRESA",
@@ -20,107 +18,91 @@
   ]
  ],
  "clips": {
-  "torre": [
-   "portal2.mp4",
-   52.0,
+  "llega": [
+   "memeio.mp4",
    0.5,
-   1.0
-  ],
-  "tele": [
-   "portal1.mp4",
-   109.0,
    0.45,
    1.0
   ],
-  "sub": [
-   "portal1.mp4",
-   136.0,
-   0.5,
+  "portal": [
+   "memeio.mp4",
+   6.0,
+   0.55,
    1.0
   ],
-  "botones": [
-   "portal1.mp4",
-   150.0,
+  "rayos": [
+   "memeio.mp4",
+   20.0,
    0.58,
    1.0
   ],
-  "llega": [
-   "portal2.mp4",
-   835.0,
-   0.5,
-   1.0
-  ],
-  "portal": [
-   "portal2.mp4",
-   851.0,
+  "flash": [
+   "memeio.mp4",
+   24.0,
    0.5,
    1.0
   ],
   "club": [
-   "portal2.mp4",
-   875.0,
-   0.45,
+   "memeio.mp4",
+   35.0,
+   0.35,
    1.0
   ],
-  "ps2": [
-   "portal2.mp4",
-   892.0,
-   0.4,
+  "pista": [
+   "memeio.mp4",
+   50.0,
+   0.5,
+   1.0
+  ],
+  "estrellas": [
+   "memeio.mp4",
+   84.0,
+   0.48,
+   1.0
+  ],
+  "kent": [
+   "memeio.mp4",
+   104.0,
+   0.52,
    1.0
   ],
   "sale": [
-   "portal2.mp4",
-   933.0,
-   0.45,
+   "memeio.mp4",
+   121.5,
+   0.5,
    1.0
   ],
   "moto": [
-   "portal2.mp4",
-   942.0,
-   0.45,
-   1.0
-  ],
-  "moto2": [
-   "portal2.mp4",
-   952.0,
-   0.45,
+   "memeio.mp4",
+   134.0,
+   0.3,
    1.0
   ]
  },
  "montage": [
-  "clip:portal@1",
-  "clip:club@5",
-  "clip:moto@1"
+  "clip:rayos@2",
+  "clip:estrellas@1",
+  "clip:sale@1"
  ],
  "shots": [
   [
-   "Sube a la torre",
-   "clip:torre@0",
-   "push"
-  ],
-  [
-   "haz que salga",
-   "clip:tele@0",
-   "punch"
-  ],
-  [
-   "Luego visita",
-   "clip:sub@0",
-   "push"
-  ],
-  [
-   "sus letreros",
-   "clip:botones@0",
-   "hold"
-  ],
-  [
-   "Ya de noche",
+   "Se abre de noche",
    "clip:llega@0",
    "push"
   ],
   [
-   "se abre el portal",
+   "pero antes",
    "clip:portal@0",
+   "hold"
+  ],
+  [
+   "y sus letras",
+   "clip:rayos@0",
+   "punch"
+  ],
+  [
+   "Lo cruzas",
+   "clip:flash@0",
    "punch"
   ],
   [
@@ -130,13 +112,18 @@
   ],
   [
    "con gráficos",
-   "clip:ps2@0",
+   "clip:pista@0",
    "hold"
   ],
   [
-   "Sales con",
-   "clip:sale@0",
+   "Hasta te",
+   "clip:kent@0",
    "push"
+  ],
+  [
+   "Y al salir",
+   "clip:sale@0",
+   "punch"
   ],
   [
    "y su moto",
@@ -145,7 +132,7 @@
   ],
   [
    "¿Tú ya",
-   "clip:moto2@0",
+   "clip:estrellas@0",
    "hold"
   ]
  ],
