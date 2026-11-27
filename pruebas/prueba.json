@@ -1,14 +1,7 @@
 {
  "urls": [],
- "canales": [
-  "https://www.youtube.com/shorts/bXP0XG-a-Kc",
-  "https://www.youtube.com/shorts/rw-lbUSWBXk",
-  "https://www.youtube.com/shorts/bTYUE8LvdEk",
-  "https://www.youtube.com/shorts/CcjTk5s5IPw",
-  "https://www.youtube.com/shorts/cohbtJRMffg",
-  "https://www.youtube.com/shorts/VY19iuwMgDs",
-  "https://www.youtube.com/shorts/YVnmRyLgxtE",
-  "https://www.youtube.com/shorts/7m3jjzcbXqM",
-  "https://www.youtube.com/shorts/Rlw1MGmJg_M"
+ "canales": [],
+ "whisper": [
+  "short-29"
  ]
 }

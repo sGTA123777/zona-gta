@@ -11,3 +11,12 @@ for i, u in enumerate(cfg["urls"]):
 for u in cfg.get("canales", []):
     code, log = run(f'yt-dlp --skip-download --print "%(id)s|%(channel)s|%(uploader_id)s|%(title)s" "{u}"', 120)
     print("CANAL", log.strip()[-300:])
+
+for tag in cfg.get("whisper", []):
+    run("pip install -q faster-whisper", 300)
+    run(f"curl -sSfL -o out/{tag}.wav https://github.com/sGTA123777/zona-gta/releases/download/{tag}/voz.wav")
+    from faster_whisper import WhisperModel
+    m = WhisperModel("small", compute_type="int8")
+    segs, _ = m.transcribe(f"out/{tag}.wav", language="es", word_timestamps=True)
+    print("WHISPER", tag, " ".join(w.word.strip() + f"[{w.start:.1f}]" for sg in segs for w in sg.words))
+    run(f"rm -f out/{tag}.wav")
