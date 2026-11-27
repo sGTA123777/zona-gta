@@ -63,7 +63,7 @@
   ],
   "efigie": [
    "skunk5.mp4",
-   133.5,
+   135.5,
    0.47,
    1.0
   ],
@@ -87,9 +87,9 @@
   ]
  },
  "montage": [
-  "clip:efigie@1",
+  "clip:pies@0.5",
   "clip:criatura@2",
-  "clip:pies@1"
+  "clip:efigie@0.5"
  ],
  "shots": [
   [
