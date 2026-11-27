@@ -7,3 +7,7 @@ for i, u in enumerate(cfg["urls"]):
     wh = run(f'ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 out/t{i}.mp4')[1].strip()
     print("==", u, "codigo", code, "RES", wh); print(log[-300:])
     run(f"rm -f out/t{i}.mp4")
+
+for u in cfg.get("canales", []):
+    code, log = run(f'yt-dlp --skip-download --print "%(id)s|%(channel)s|%(uploader_id)s|%(title)s" "{u}"', 120)
+    print("CANAL", log.strip()[-300:])
