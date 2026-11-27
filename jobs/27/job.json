@@ -4,5 +4,166 @@
  "fuentes": {
   "portal1.mp4": "https://storage.googleapis.com/vidiq-user-videos/f6b88ee4-9958-45c8-a6f9-c20f76d890cb/7e086cf5-10dc-4eaf-92e9-8e7f7d524fac.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1796343405&Signature=KgTKM8rZn3xETLSVCCG7ESa9IJdkENrP9DXKts%2B8WtIVDpHMgUbArDei4HkiucPsbMjBqa4V0fltCQh6pegQsxsolpRFPGtgGsC8K3TXlAdA4c%2BBS7CtmOPSapepTIWfk12lHBYO19Iw%2B9C5Z0wEGeM1r9XT1mQtxsrj8G3hVMvNht0%2BwTkjeEKbx6ckYqiwOC5WuiFcC6uS3Q5j3A19HEzBUUzqyZTprQTjGXAlryz0PK7XaWjf4Mg%2BwqqGNZiVQT3rUBf3JgQS8aNxCDPZB0iZwowjAP7RBVgJX1PI%2FxRNU48591tITIjGrHCVZghAO6sS5qQwhCM6Z6NU3mhsSA%3D%3D",
   "portal2.mp4": "https://storage.googleapis.com/vidiq-user-videos/f6b88ee4-9958-45c8-a6f9-c20f76d890cb/a30ecd69-e094-4014-b8dc-d4e91b72352a.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1796343406&Signature=Va4%2B%2F9yktEawLH1V901YygnFN3fK4x5HsfSJD6OlHTTvV1Z2ZsZmZsUHWoJINgLtg6zF2Uh1HGnQG2vXCeAa2UgzNiFJEVY6TAPtfeBhSg4Cu2foXB0O6Hm4VfM4Ota9LWa9XlDGoGkkws7kTdIercQjvBoVlNGq0gNxBtBb8sdnF8r7uiRSjTNe7mf8gyTcBO6fj00ubxTws9qmyT%2BfZcUEYBlbUGukKbrMXN4yeIkXVqnXyOFqDXNtWZY2XgvupqoOy85bRSVc8YYdQqSmw45m1K%2Frh%2Bi%2FoR2etnNqVI%2FPdxZ4CPB9pbHS0V6BMdUWcHNSeq9vyMrPG7j7Y2Sapw%3D%3D"
- }
+ },
+ "cancion_url": "https://storage.googleapis.com/vidiq-user-videos/f6b88ee4-9958-45c8-a6f9-c20f76d890cb/18708d5f-5669-4a92-b730-0a8f47ab405b.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1796343384&Signature=o0vzUXaSijc1TZmr5rPlhPm6%2FZnt1U43M7abI75UqWA6e%2F9rl03D%2FoFa43bdlvS9ahLrOHSkLlBtzCRaHbuc1b2aWr7C6ulQtNOp%2FSDqmLxDMz7HW0cZrWPHs92D9%2BVnIGhqtuXA6f%2FTkWN9BAzhoP1QIkEXoC8eyzt9wW6EAtxdrIF5zN8AIEbMSjqtm2JJs3HkRPNq8hn1XQ5PE6eomIZc3KCbQH65dERV1pygm0O6E2Mr5f6b74NfkjL1ppMvODvf6cqhBMTFb2gPGVioxehnjm4cwpE85oRoq8wJxcg9sj7zXOwBG1OQD1isLWas0qsKEz4TuQN4eSlDBT1FqA%3D%3D",
+ "song_start": 1.0,
+ "texto": "GTA 6 esconde un portal que te regresa al Vice City de 2002. Sube a la torre de radio de Key Lento y haz que salga el logo del Malibu en la tele. Luego visita doce subestaciones sin viaje rápido: sus letreros juntos dicen Life is passing me by, el truco del Vice City original. Ya de noche, en el reactor de Turtle Head, se abre el portal, y apareces en el Club Malibu con gráficos de PS2. Sales con la camisa de Tommy Vercetti y su moto. ¿Tú ya entraste?",
+ "hook": [
+  [
+   "GTA 6 TE REGRESA",
+   "white"
+  ],
+  [
+   "AL VICE CITY 2002",
+   "yellow"
+  ]
+ ],
+ "clips": {
+  "torre": [
+   "portal2.mp4",
+   42.0,
+   0.5,
+   1.0
+  ],
+  "tele": [
+   "portal1.mp4",
+   109.0,
+   0.45,
+   1.0
+  ],
+  "sub": [
+   "portal1.mp4",
+   136.0,
+   0.5,
+   1.0
+  ],
+  "botones": [
+   "portal1.mp4",
+   150.0,
+   0.58,
+   1.0
+  ],
+  "llega": [
+   "portal2.mp4",
+   835.0,
+   0.5,
+   1.0
+  ],
+  "portal": [
+   "portal2.mp4",
+   851.0,
+   0.5,
+   1.0
+  ],
+  "club": [
+   "portal2.mp4",
+   875.0,
+   0.45,
+   1.0
+  ],
+  "ps2": [
+   "portal2.mp4",
+   892.0,
+   0.4,
+   1.0
+  ],
+  "sale": [
+   "portal2.mp4",
+   933.0,
+   0.45,
+   1.0
+  ],
+  "moto": [
+   "portal2.mp4",
+   942.0,
+   0.45,
+   1.0
+  ],
+  "moto2": [
+   "portal2.mp4",
+   952.0,
+   0.45,
+   1.0
+  ]
+ },
+ "montage": [
+  "clip:portal@1",
+  "clip:club@5",
+  "clip:moto@1"
+ ],
+ "shots": [
+  [
+   "Sube a la torre",
+   "clip:torre@0",
+   "push"
+  ],
+  [
+   "haz que salga",
+   "clip:tele@0",
+   "punch"
+  ],
+  [
+   "Luego visita",
+   "clip:sub@0",
+   "push"
+  ],
+  [
+   "sus letreros",
+   "clip:botones@0",
+   "hold"
+  ],
+  [
+   "Ya de noche",
+   "clip:llega@0",
+   "push"
+  ],
+  [
+   "se abre el portal",
+   "clip:portal@0",
+   "punch"
+  ],
+  [
+   "y apareces",
+   "clip:club@0",
+   "push"
+  ],
+  [
+   "con gráficos",
+   "clip:ps2@0",
+   "hold"
+  ],
+  [
+   "Sales con",
+   "clip:sale@0",
+   "push"
+  ],
+  [
+   "y su moto",
+   "clip:moto@0",
+   "right"
+  ],
+  [
+   "¿Tú ya",
+   "clip:moto2@0",
+   "hold"
+  ]
+ ],
+ "kw": [
+  [
+   "Life is passing me by",
+   "LIFE IS PASSING ME BY",
+   "yellow"
+  ],
+  [
+   "gráficos de PS2",
+   "GRÁFICOS DE PS2",
+   "cyan"
+  ]
+ ],
+ "hits": [
+  "portal",
+  "malibu",
+  "tommy"
+ ],
+ "audio_juego": []
 }
