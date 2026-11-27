@@ -17,6 +17,8 @@ for tag in cfg.get("whisper", []):
     run(f"curl -sSfL -o out/{tag}.wav https://github.com/sGTA123777/zona-gta/releases/download/{tag}/voz.wav")
     from faster_whisper import WhisperModel
     m = WhisperModel("small", compute_type="int8")
-    segs, _ = m.transcribe(f"out/{tag}.wav", language="es", word_timestamps=True)
+    run(f"ffmpeg -v error -y -i out/{tag}.wav -ac 1 -ar 16000 -f f32le out/{tag}.raw")
+    import numpy as np
+    segs, _ = m.transcribe(np.fromfile(f"out/{tag}.raw", dtype=np.float32), language="es", word_timestamps=True)
     print("WHISPER", tag, " ".join(w.word.strip() + f"[{w.start:.1f}]" for sg in segs for w in sg.words))
-    run(f"rm -f out/{tag}.wav")
+    run(f"rm -f out/{tag}.wav out/{tag}.raw")
