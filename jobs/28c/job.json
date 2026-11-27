@@ -1,0 +1,169 @@
+{
+ "id": "28c",
+ "slug": "ovni_secuestro",
+ "fuentes": {
+  "ovnic.mp4": "https://storage.googleapis.com/vidiq-user-videos/f6b88ee4-9958-45c8-a6f9-c20f76d890cb/962b7d57-14da-460f-a998-2f172e293394.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1796354513&Signature=p%2Bh8ruZqztmLMBiv1PFvQO4VKodvNo2RJVR1ohaK8HbZfVhR4xgmPbyvUdLy3aR73fKgAz9y1vWQuxDr1DMohSy%2FFrP2%2BEXcNGydEQoZK2Vlx8G6Bx3mEH%2B%2BeYK2N9iJUdkLTjn2jsYr8lZUBZ%2FP9f%2FuoWgPv%2B9E8CnauGFD8OMRhqHc9SvTFo6mQsqxlr3cdBGkE9JV%2FFBG1yhM2a8VgGnwUpOVML8p7iRgPfdli9ySCz7x9pa1w008jX8YYfad1dBf5M%2FfZ9XsWjiH8VKhRKZ6lVo%2BDWHajJxCLzsJafo9W3rMluysqxAx1LCssVO6IE1QKF1pA2sLgZ37zTiw7Q%3D%3D"
+ },
+ "cancion_url": "https://storage.googleapis.com/vidiq-user-videos/f6b88ee4-9958-45c8-a6f9-c20f76d890cb/41d0f46b-433d-4667-b9db-dc92809587eb.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1796354860&Signature=IVO7qLK9vBoj0TiMed7tWxRyBn26gdTA6T01ewIavnghfaNbdwp6LUZfi5BshSTGmw4aAEctAWFwGDM52UDMLPVbRSBu7xSHPZhDMzJeZ%2FuOWltL%2BSWR7ZNfhNgExzRa2UIR5qGETw7J7AHBdgXIgYrhbvp5DnvrmNgojrnEv081hgXKxjM5scP7kUWaCObNGJGoUZMhwivauYqyShpY4incCGyz6omr6Mkfs%2BvVR6WnbEy14dryQTyYrxjt%2BMXgBsj44lGBFpWcAb1ggPKQLhiUp4tyF4ry42%2BMpTs530BLW%2FV7UJiM5vCr88%2FlA5AZjSKVeHmwk4yHIhCrOJ7lIQ%3D%3D",
+ "song_start": 60.0,
+ "texto": "En GTA 6 te pueden secuestrar los aliens. Ve a Kelly County, cerca del motel Starlet, después de las dos de la mañana y solo. Si ves un carro abandonado con las luces prendidas, métete al bosque. Ahí un ovni se está llevando a una mujer… y luego viene por ti. Despiertas lejos, con el trofeo The Truth Is Out There. ¿Tú ya lo encontraste?",
+ "hook": [
+  [
+   "TE SECUESTRAN",
+   "white"
+  ],
+  [
+   "LOS ALIENS",
+   "yellow"
+  ]
+ ],
+ "clips": {
+  "mapa": [
+   "ovnic.mp4",
+   4.0,
+   0.45,
+   1.0
+  ],
+  "carro": [
+   "ovnic.mp4",
+   12.5,
+   0.42,
+   1.0
+  ],
+  "carro2": [
+   "ovnic.mp4",
+   20.0,
+   0.5,
+   1.0
+  ],
+  "bosque": [
+   "ovnic.mp4",
+   28.0,
+   0.5,
+   1.0
+  ],
+  "luz": [
+   "ovnic.mp4",
+   43.0,
+   0.55,
+   1.0
+  ],
+  "ovni": [
+   "ovnic.mp4",
+   51.0,
+   0.5,
+   1.0
+  ],
+  "ovni2": [
+   "ovnic.mp4",
+   59.0,
+   0.5,
+   1.0
+  ],
+  "abduce": [
+   "ovnic.mp4",
+   65.0,
+   0.55,
+   1.0
+  ],
+  "mira": [
+   "ovnic.mp4",
+   161.5,
+   0.45,
+   1.0
+  ],
+  "flash": [
+   "ovnic.mp4",
+   163.5,
+   0.5,
+   1.0
+  ],
+  "despierta": [
+   "ovnic.mp4",
+   170.0,
+   0.5,
+   1.0
+  ],
+  "camina": [
+   "ovnic.mp4",
+   175.0,
+   0.45,
+   1.0
+  ]
+ },
+ "montage": [
+  "clip:ovni@1",
+  "clip:abduce@1",
+  "clip:flash@1"
+ ],
+ "shots": [
+  [
+   "Ve a Kelly",
+   "clip:mapa@0",
+   "push"
+  ],
+  [
+   "después de las",
+   "clip:carro2@0",
+   "push"
+  ],
+  [
+   "Si ves un carro",
+   "clip:carro@0",
+   "hold"
+  ],
+  [
+   "métete al bosque",
+   "clip:bosque@0",
+   "push"
+  ],
+  [
+   "Ahí un ovni",
+   "clip:ovni@0",
+   "punch"
+  ],
+  [
+   "y luego viene",
+   "clip:mira@0",
+   "punch"
+  ],
+  [
+   "Despiertas lejos",
+   "clip:despierta@0",
+   "push"
+  ],
+  [
+   "con el trofeo",
+   "clip:camina@0",
+   "hold"
+  ],
+  [
+   "¿Tú ya",
+   "clip:ovni2@0",
+   "hold"
+  ]
+ ],
+ "kw": [
+  [
+   "Kelly County",
+   "KELLY COUNTY",
+   "yellow"
+  ],
+  [
+   "dos de la mañana",
+   "2:00 AM",
+   "cyan"
+  ],
+  [
+   "The Truth Is Out There",
+   "THE TRUTH IS OUT THERE",
+   "yellow"
+  ]
+ ],
+ "hits": [
+  "aliens",
+  "ovni",
+  "ti"
+ ],
+ "audio_juego": []
+}
