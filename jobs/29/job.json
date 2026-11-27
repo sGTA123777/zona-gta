@@ -75,7 +75,7 @@
   ],
   "pies": [
    "skunk5.mp4",
-   154.0,
+   155.0,
    0.4,
    1.0
   ],
@@ -87,7 +87,7 @@
   ]
  },
  "montage": [
-  "clip:pies@0.5",
+  "clip:pies@0.3",
   "clip:criatura@2",
   "clip:efigie@0.5"
  ],
