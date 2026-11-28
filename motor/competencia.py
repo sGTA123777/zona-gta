@@ -6,10 +6,13 @@ Q = {"en": ["gta 6", "gta 6 secret", "gta 6 easter egg", "gta 6 funny", "gta 6 t
      "fr": ["gta 6 secret astuce"], "de": ["gta 6 geheimnis"], "it": ["gta 6 segreti"], "ru": ["гта 6"], "ar": ["قراند 6"]}
 SP = {"shorts": "EgIQCQ%253D%253D"}
 def buscar(q, sp):
-    u = "https://www.youtube.com/results?search_query=" + urllib.parse.quote(q) + "&sp=" + sp
-    r = subprocess.run(["yt-dlp", "--flat-playlist", "-J", "--playlist-end", "60", u], capture_output=True, text=True)
-    try: return json.loads(r.stdout).get("entries", []) or []
-    except Exception: print("fallo", q, r.stderr[-200:]); return []
+    out = []
+    for modo in ("ytsearch50", "ytsearchdate50"):
+        r = subprocess.run(["yt-dlp", "--flat-playlist", "-J", f"{modo}:{q} #shorts"], capture_output=True, text=True)
+        try: ents = json.loads(r.stdout).get("entries", []) or []
+        except Exception: print("fallo", q, r.stderr[-200:]); continue
+        out += [e for e in ents if e and ("/shorts/" in (e.get("url") or "") or 0 < (e.get("duration") or 999) <= 75)]
+    return out
 vis = {}
 for lang, qs in Q.items():
     for q in qs:
