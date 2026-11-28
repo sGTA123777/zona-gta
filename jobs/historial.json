@@ -38,12 +38,14 @@
    "tema": "Skunk Ape, el Bigfoot de GTA 6 (pantanos de Grassrivers, efigie de madera que te desmaya)",
    "titulo": "GTA 6 escondió su propio Bigfoot 🦍",
    "postId": "5c9b8583-44b7-4cf0-b35e-3a9eac091915",
-   "revision": "a495025b",
-   "estado": "borrador (esperando sí)",
+   "revision": "294b84ce",
+   "estado": "publicado",
    "comentario": "¿Ya lo encontraste o te dio miedo meterte al monte? 🦍",
    "cancion": "Rockwell - Somebody's Watching Me",
    "clips": "GTA Series Videos (D7KLT5aMvvk), youtube shorts bXP0XG-a-Kc",
-   "video": "https://github.com/sGTA123777/zona-gta/releases/download/short-29/short.mp4"
+   "video": "https://github.com/sGTA123777/zona-gta/releases/download/short-29/short.mp4",
+   "url": "https://www.youtube.com/watch?v=VLmrccZLmcA",
+   "publicado": "2026-11-27 18:15 -07:00 (aprobado tarde, salió al momento)"
   },
   {
    "id": "30",
@@ -53,11 +55,13 @@
    "titulo": "GTA 6 tiene un huevo de pascua… literal 🥚",
    "postId": "3364223d-4471-4803-9063-f732f84f2baf",
    "revision": "b30b1df5",
-   "estado": "borrador (esperando sí)",
+   "estado": "publicado (programado 19:00; vidIQ no confirmó la hora)",
    "comentario": "¿Cuánto aguantaste subiendo la escalera? 🥚",
    "cancion": "Survivor - Eye of the Tiger",
    "clips": "youtube aOOkVEkO0A4, shorts VY19iuwMgDs, 6t88ZNPoPFQ",
-   "video": "https://github.com/sGTA123777/zona-gta/releases/download/short-30/short.mp4"
+   "video": "https://github.com/sGTA123777/zona-gta/releases/download/short-30/short.mp4",
+   "url": "https://www.youtube.com/watch?v=j6YE60rwkGQ",
+   "publicado": "2026-11-27 18:15 -07:00 (enviado)"
   }
  ],
  "28": {
