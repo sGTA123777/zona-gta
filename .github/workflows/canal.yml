@@ -15,7 +15,7 @@ jobs:
         run: |
           set +e
           for t in shorts videos; do
-            yt-dlp --flat-playlist --print "%(id)s\t%(view_count)s\t%(title)s" "https://www.youtube.com/channel/UCGqoHKZfjCa0TL2ULDzI1CQ/$t" >> lista.tsv 2>>err.txt
+            yt-dlp --flat-playlist --print "%(id)s | %(view_count)s vistas | %(title)s" "https://www.youtube.com/channel/UCGqoHKZfjCa0TL2ULDzI1CQ/$t" >> lista.tsv 2>>err.txt
           done
           curl -s "https://www.youtube.com/feeds/videos.xml?channel_id=UCGqoHKZfjCa0TL2ULDzI1CQ" | grep -oP '(?<=<yt:videoId>)[^<]+|(?<=<title>)[^<]+' > feed.txt
           sort -u lista.tsv > jobs/canal_videos.tsv
