@@ -1,0 +1,25 @@
+name: canal
+on:
+  push:
+    paths: ['jobs/canal.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  lista:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q "yt-dlp[default]"
+      - name: Listar videos del canal
+        run: |
+          set +e
+          for t in shorts videos; do
+            yt-dlp --flat-playlist --print "%(id)s\t%(title)s" "https://www.youtube.com/channel/UCGqoHKZfjCa0TL2ULDzI1CQ/$t" >> lista.tsv 2>>err.txt
+          done
+          curl -s "https://www.youtube.com/feeds/videos.xml?channel_id=UCGqoHKZfjCa0TL2ULDzI1CQ" | grep -oP '(?<=<yt:videoId>)[^<]+|(?<=<title>)[^<]+' > feed.txt
+          sort -u lista.tsv > jobs/canal_videos.tsv
+          cp feed.txt jobs/canal_feed.txt
+          tail -5 err.txt
+          git config user.name bot; git config user.email bot@users.noreply.github.com
+          git add jobs/canal_videos.tsv jobs/canal_feed.txt && git commit -m "Lista de videos del canal" && git push
